@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos em HTML5</title>
+  </head>
+  <body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+      <source src="midia/Video-Exemplo1-mp4.mp4" type="video/mp4" />
+      <source src="midia/Video-Exemplo1-mkv.mkv" type="video/mkv" />
+      <source src="midia/Video-Exemplo1-webm.webm" type="video/webm" />
+      <source src="midia/Video-Exemplo1-ogv.ogv" type="video/ogg" />
+      <p>Seu navegador não suporta vídeos HTML5.</p>
+      <!-- O atributo "poster" define uma imagem de pré-visualização para o vídeo, que é exibida antes do vídeo ser reproduzido. -->
+      <!-- O atributo "controls" adiciona controles de reprodução ao vídeo, permitindo que os usuários reproduzam, pausem, ajustem o volume e naveguem pelo vídeo. -->
+      <!-- O elemento <source> é usado para especificar diferentes fontes de vídeo, permitindo que o navegador escolha a melhor opção com base em sua compatibilidade. -->
+      <!-- O elemento <p> dentro do elemento <video> é usado para fornecer uma mensagem alternativa para navegadores que não suportam vídeos HTML5. -->
+      <!-- O atributo "type" dentro do elemento <source> especifica o tipo MIME do vídeo, ajudando o navegador a identificar o formato do arquivo. -->
+      <!-- O atributo "width" define a largura do vídeo em pixels. -->
+      <!-- O elemento <video> é usado para incorporar vídeos em uma página HTML5, permitindo a reprodução de conteúdo multimídia diretamente no navegador. -->
+      <!--A ordem de preferência dos formatos é importante para garantir compatibilidade com diferentes navegadores. -->
+      <!-- Vídeos hospedados localmente gastam mais banda gerando mais tráfego de rede. -->
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=H2xOk74yNtpubVUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </body>
+</html>
