@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <p>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              autocomplete="name"
+              minlength="5"
+              maxlength="30"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+            />
+          </p>
+          <p>
+            <label for="tel">Telefone</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              autocomplete="tel"
+              required
+              pattern="^\(?\d{2}\)?\s?9?\d{4}-?\d{4}$"
+              title="Formato esperado: (XX) 9XXXX-XXXX ou XX XXXXXXXX"
+            />
+          </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
