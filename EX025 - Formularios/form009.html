@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="num">Numero</label>
+            <input type="range" name="num" id="num" min="0" max="1000" value="500" oninput="val.innerHTML = Number(num.value)">
+            <output name="val" id="val">500</output>
+        </p>
+    </form>
+</body>
+</html>
